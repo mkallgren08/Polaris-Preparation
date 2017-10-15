@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
 
     return (
       <div>
@@ -49,11 +48,11 @@ class App extends Component {
                   //style={{ margin: "7px" }}
                   className="navButton navHome"
                   onClick={this.goTo.bind(this, 'home')}
-              >
-                Home
+                >
+                  Home
               </Button>
 
-              {/* {
+                {/* {
                 !isAuthenticated() && (
                     <Button
                         bsStyle="primary"
@@ -77,32 +76,25 @@ class App extends Component {
                 >
                   Blogs
               </Button>
-                {
-                  !isAuthenticated() && (
-                    <Button
-                      //bsStyle="primary"
-                      //style={{ margin: "7px" }}
-                      className="navButton navLoginOut"
-                      onClick={this.login.bind(this)}
-                    >
-                      Log In
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton navLoginOut"
+                  /* onClick={this.login.bind(this)} */
+                >
+                  Log In
+              </Button>
+
+
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton "
+                  onClick={this.goTo.bind(this, 'profile')}
+                >
+                  Profile
                     </Button>
-                )
-              }
-              {
-                isAuthenticated() && (
-                    <Button
-                      //bsStyle="primary"
-                      //style={{ margin: "7px" }}
-                      className="navButton "
-                      onClick={this.goTo.bind(this, 'profile')}
-                    >
-                      Profile
-                    </Button>
-                )
-              }
-              {
-                isAuthenticated() && (
+
                     <Button
                       //bsStyle="primary"
                       //style={{ margin: "7px" }}
@@ -111,10 +103,6 @@ class App extends Component {
                     >
                       EmergencyForm
                     </Button>
-                  )
-                }
-                {
-                  isAuthenticated() && (
                     <Button
                       //bsStyle="primary"
                       //style={{ margin: "7px" }}
@@ -123,10 +111,6 @@ class App extends Component {
                     >
                       EmergencyMap
                     </Button>
-                  )
-                }
-                {
-                  isAuthenticated() && (
                     <Button
                       //bsStyle="primary"
                       //style={{ margin: "7px" }}
@@ -135,20 +119,15 @@ class App extends Component {
                     >
                       Ping
                     </Button>
-                  )
-                }
-                {
-                  isAuthenticated() && (
-                    <Button
+
+                    {/* <Button
                       //bsStyle="primary"
                       //style={{ margin: "7px" }}
                       className="navButton navLoginOut"
                       onClick={this.logout.bind(this)}
                     >
                       Log Out
-                    </Button>
-                  )
-                }
+                    </Button> */}
               </div>
             </Col>
           </Row>

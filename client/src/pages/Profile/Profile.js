@@ -22,21 +22,21 @@ class Profile extends Component {
     phoneNumber: ""
   };
 
-  componentDidMount() {
-    this.loadUser();
-  }
+//   componentDidMount() {
+//     this.loadUser();
+//   }
 
-  loadUser() {
-    const { auth } = this.props;
+//   loadUser() {
+//     const { auth } = this.props;
 
-    auth.getProfile((err, profile) => {
-      if (err) throw new Error("Error retrieving profile from Auth0");
-      console.log(profile);
-      API.getUser(auth.getAccessToken(), profile.sub)
-      .then(res => this.setState({ ...res.data }))
-      .catch(err => console.log(err));
-    });
-  }
+//     auth.getProfile((err, profile) => {
+//       if (err) throw new Error("Error retrieving profile from Auth0");
+//       console.log(profile);
+//       API.getUser(auth.getAccessToken(), profile.sub)
+//       .then(res => this.setState({ ...res.data }))
+//       .catch(err => console.log(err));
+//     });
+//   }
 
   handleInputChange = event => {
     const { name, value } = event.target;

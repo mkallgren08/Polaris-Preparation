@@ -48,7 +48,7 @@ router.get(
   }
 );
 
-router.post("/users/profile", checkJwt, checkScopes, function(req , res) {
+router.post("/users/profile", function(req , res) {
   res.status(201).send({message: "This is the POST /profile endpoint"});
 });
 

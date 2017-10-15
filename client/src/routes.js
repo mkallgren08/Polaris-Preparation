@@ -52,38 +52,11 @@ export const makeMainRoutes = () => {
           <Route path="/tornado" render={(props) => <Tornado auth={auth} {...props} />} />
           <Route path="/tsunami" render={(props) => <Tsunami auth={auth} {...props} />} />
           <Route path="/volcano" render={(props) => <Volcano auth={auth} {...props} />} />
-          <Route path="/profile" render={(props) => (
-              !auth.isAuthenticated() ? (
-                  <Redirect to="/home"/>
-              ) : (
-                  <Profile auth={auth} test="foo" {...props} />
-              )
-          )} />
-          <Route path="/ping" render={(props) => (
-              !auth.isAuthenticated() ? (
-                  <Redirect to="/home"/>
-              ) : (
-                  <Ping auth={auth} {...props} />
-              )
-          )} />
-          <Route path="/EmergencyForm" render={(props) => (
-              !auth.isAuthenticated() ? (
-                  <Redirect to='/home'/>
-              ) : (
-                  <EmergencyForm auth={auth} {...props} />
-              )
-          )}/>
-          <Route path="/EmergencyMap" render={(props) => (
-              !auth.isAuthenticated() ? (
-                  <Redirect to='/home'/>
-              ) : (
-                  <EmergencyMap auth={auth} {...props} />
-              )
-          )}/>
-          <Route path="/callback" render={(props) => {
-            handleAuthentication(props);
-            return <Callback {...props} />
-          }}/>
+          <Route path="/profile" render={(props) => (<Profile /*auth={auth} test="foo"*/ {...props} />)} />
+          <Route path="/ping" render={(props) => (<Ping auth={auth} {...props} />)} />
+          <Route path="/EmergencyForm" render={(props) => (<EmergencyForm auth={auth} {...props} />)}/>
+          <Route path="/EmergencyMap" render={(props) => (<EmergencyMap auth={auth} {...props} />)}/>
+          <Route path="/callback" render={(props) => {return <Callback {...props} />}}/>
 
         </div>
       </Router>

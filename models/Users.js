@@ -3,14 +3,22 @@ const mongoose = require('mongoose');
 
 //Define the schema
 const UsersSchema = new mongoose.Schema({
-  email: {type: String, unique: true},
+  username: {type: String, unique: true},
+  // password: "string"
   name: 'String',
   address: 'String',
-  city: 'String',
-  state: 'String',
-  zipcode: 'Number',
+  location: {
+    lat: "String",
+    lng: "String"
+  },
+  safe: "Boolean",
+  needs: {
+    category: 'String',
+    specifics: 'String'
+  },
+  articles: [],
   phone: 'String'
-  });
+});
 
 module.exports = mongoose.model('Users', UsersSchema);
 
