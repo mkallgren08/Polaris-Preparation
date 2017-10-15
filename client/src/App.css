@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #C9C4C4;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.navbar-default{
+  border-radius: 0px;
+  border-bottom: solid 2px #808080;
+  background: #928F8F; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#928F8F, #A9B8C5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#928F8F, #A9B8C5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#928F8F, #A9B8C5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#928F8F, #A9B8C5); /* Standard syntax */
+}
+
+.navBrand, .navGit{
+  text-align: center;
+  border-left: 0px;
+  vertical-align: middle;
+}
+
+.navBrand{
+  border: 1px solid #62626E;
+  color: darkslategray;
+  margin: 7px 0px;
+  font-size: 18px;
+  font-style: italic;
+  padding: 11px;
+  
+  background: #928F8F; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#F1F1F1, #ACABAB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F1F1F1, #ACABAB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F1F1F1, #ACABAB); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F1F1F1, #ACABAB); /* Standard syntax */
+  
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.navBrand:hover{
+  background-color: #e6e6e6;
+}
+
+.NavbarCustom{
+  padding-right: 0px;
+}
+
+.navBrandWrapper{
+  padding-left:0px;
+  padding-right: 0px;
+  height: 50px;
+  text-align: center;
+
+}
+
+.navBrandWrapper:hover{
+  background-color: #e6e6e6;
+  color: darkslategray;
+  text-decoration: none ;
+}
+
+
+.navButton{
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  height: 100%;
+}
+
+.navGit, .navBrandWrapper, .navWrapper{
+  margin: 7px 0px;
+  /* border: black 3px solid; */
+  height: 50px;
+}
+
+.navGitWrapper{
+  padding-left: 0px;
+}
+
+.navHome{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 15px;
+}
+
+.navLoginOut{
+  text-align: center;
+  width: 150px;
+  padding-left: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 15px;
+  border-left: double #AFAFAF 3px;
+}
+
+.navWrapper{
+  float: right;
+  margin-right: 8px;
+  border: 1px solid #62626E;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  background: #ACABAB; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left bottom, #ACABAB, #F1F1F1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #ACABAB, #F1F1F1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, #ACABAB, #F1F1F1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, #ACABAB, #F1F1F1); /* Standard syntax */
+
+}
+
+#root {
+  background-image: url("./images/flooding.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.transparent {
+  background: transparent;
+  border-color: transparent;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

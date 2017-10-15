@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var i = 0; i < 10; i++) {
+        //     console.log(i)
+        //     function ticker (i){
+
+        //     }
+        //     setTimeout(ticker, 1000);
+        // }
+        // any async callbacks need to be defined outside of a loop!
+        function ticker(i) {
+            setTimeout(
+                function () {
+                    console.log(i);
+                },
+                1000*i
+            );
+        }
+
+        for (var i = 0; i < 10; i++) {
+            ticker(i);
+        }
+    </script>
+</body>
+
+</html>

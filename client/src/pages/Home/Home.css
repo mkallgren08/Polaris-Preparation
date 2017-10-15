@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url("../../images/background.jpg");
+    background-size: cover;
+}
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.blueBtn {
+    background: #337ab7;
+    color: white;
+    border-color: #337ab7;
+}
+
+.whiteText {
+    color: white;
+}
+
+.blackText {
+    color: black;
+}
+/* .pageHeader {
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-family: 'Eczar', serif;
+} */
+.intro {
+    font-size: 2rem;
+}
