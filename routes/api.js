@@ -14,9 +14,6 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
-  throw "Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file";
-}
 //Creating middleware for checking the JSON Web Token
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
