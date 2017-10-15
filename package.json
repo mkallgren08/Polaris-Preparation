@@ -1,5 +1,5 @@
 {
-  "name": "be-prepared-project-3",
+  "name": "polaris-preparation",
   "version": "0.0.1",
   "private": true,
   "engine": {
@@ -9,7 +9,7 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
     "client": "node start-client.js",
-    "heroku-postbuild": "cd client && npm --production=false && npm run build"
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
   },
   "dependencies": {
     "auth0-js": "^8.10.1",
