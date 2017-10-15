@@ -5,19 +5,19 @@ const mongoose = require('mongoose');
 const UsersSchema = new mongoose.Schema({
   username: {type: String, unique: true},
   // password: "string"
-  name: 'String',
-  address: 'String',
+  username: {type: String, required: true},
+  address: {type: String, required: true},
   location: {
-    lat: "String",
-    lng: "String"
+    lat: String,
+    lng: String
   },
-  safe: "Boolean",
+  safe: Boolean,
   needs: {
-    category: 'String',
-    specifics: 'String'
+    category: String,
+    specifics: String
   },
   articles: [],
-  phone: 'String'
+  phone: String
 });
 
 module.exports = mongoose.model('Users', UsersSchema);

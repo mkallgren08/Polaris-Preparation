@@ -7,6 +7,7 @@ const jwt = require("express-jwt");
 const jwtAuthz = require("express-jwt-authz");
 const jwksRsa = require("jwks-rsa");
 const geocoding = require("google-geocoding");
+const usersController = require("../controllers/usersController.js")
 
 //Setting environment variable so it does not call dotenv in production
 if (process.env.NODE_ENV !== 'production') {
@@ -39,7 +40,6 @@ router.get('/api/users', checkJwt, checkScopes, function(req, res) {
 
 router.get(
   "/users/:id",
-  checkJwt, checkScopes,
   function(req, res) {
     res.json({
       name: "Joe",
@@ -73,5 +73,11 @@ router.post("/", multer({ dest: "./uploads/" }).single("upl"), function(
   console.log(req.file);
   res.status(204).end();
 });
+
+
+router.route("/api/users")
+  .get(usersController.findAll)
+  .post(usersController.create)
+
 
 module.exports = router;

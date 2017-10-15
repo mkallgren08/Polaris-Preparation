@@ -2,28 +2,17 @@ import axios from "axios";
 
 export default {
   //Get user with given id - auth required
-  getUser: function(token, id) {
-    return axios.get("/api/users/" + id, {
-        headers: {
-          Authorization: "Bearer " + token
-        }
-    });
+  getUser: function(id) {
+    return axios.get("/api/users/" + id);
   },
   //Save user to the database - auth required
-  saveUser: function(token, id) {
-    return axios.get("api/users/" + id, {
-        headers: {
-          Authorization: "Bearer " + token
-        }
-    });
+  saveUser: function(userData) {
+    return axios.post("api/users/", userData);
   },
 
   // Save Emergency Form Data
   saveForm: function(token, id){
     return axios.post("/api/users/" + id + "/emergencyform", {
-      headers: {
-        Authorization: "Bearer " + token
-      }
   });
   },
 

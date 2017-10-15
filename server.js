@@ -36,7 +36,7 @@ app.use("/uploads", express.static("uploads"));
 
 //configuring database connection
 mongoose.connect(
-  "mongodb://proj3:ClassProject@ds147544.mlab.com:47544/prepared_db",
+  "mongodb://localhost/polaris",
   {
     useMongoClient: true
   }

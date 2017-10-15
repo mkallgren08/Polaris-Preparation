@@ -79,48 +79,47 @@ class App extends Component {
                 <Button
                   //bsStyle="primary"
                   //style={{ margin: "7px" }}
-                  className="navButton navLoginOut"
-                  /* onClick={this.login.bind(this)} */
-                >
-                  Log In
-              </Button>
-
-
-                <Button
-                  //bsStyle="primary"
-                  //style={{ margin: "7px" }}
                   className="navButton "
                   onClick={this.goTo.bind(this, 'profile')}
                 >
                   Profile
                     </Button>
 
-                    <Button
-                      //bsStyle="primary"
-                      //style={{ margin: "7px" }}
-                      className="navButton "
-                      onClick={this.goTo.bind(this, 'emergencyform')}
-                    >
-                      EmergencyForm
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton "
+                  onClick={this.goTo.bind(this, 'emergencyform')}
+                >
+                  EmergencyForm
                     </Button>
-                    <Button
-                      //bsStyle="primary"
-                      //style={{ margin: "7px" }}
-                      className="navButton "
-                      onClick={this.goTo.bind(this, 'emergencymap')}
-                    >
-                      EmergencyMap
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton "
+                  onClick={this.goTo.bind(this, 'emergencymap')}
+                >
+                  EmergencyMap
                     </Button>
-                    <Button
-                      //bsStyle="primary"
-                      //style={{ margin: "7px" }}
-                      className="navButton "
-                      onClick={this.goTo.bind(this, 'ping')}
-                    >
-                      Ping
-                    </Button>
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton "
+                  onClick={this.goTo.bind(this, 'ping')}
+                >
+                  Ping
+                </Button>
 
-                    {/* <Button
+                <Button
+                  //bsStyle="primary"
+                  //style={{ margin: "7px" }}
+                  className="navButton navLoginOut"
+                /* onClick={this.login.bind(this)} */
+                >
+                  Log In
+                </Button>
+
+                {/* <Button
                       //bsStyle="primary"
                       //style={{ margin: "7px" }}
                       className="navButton navLoginOut"
